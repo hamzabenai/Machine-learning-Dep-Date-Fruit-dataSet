@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-
+import openpyxl
 def load_model():
   with open('model.pkl', 'rb') as file:
       model = pickle.load(file)
