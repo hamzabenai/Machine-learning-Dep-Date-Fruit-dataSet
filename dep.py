@@ -42,7 +42,7 @@ def main():
   with About_work:
     st.title('Data Information')
     st.write('The dataset should contain the following columns:')
-    data = pd.read_excel('H:\DATA\MY\MLOPS\Practice-23\Date_Fruit_Datasets.xlsx')
+    data = pd.read_excel('raw_data.xlsx')
     columns = data.columns.tolist()
     st.write(columns)
     st.write('The target variable is "Class" that contains these Classes:')
